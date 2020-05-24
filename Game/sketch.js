@@ -48,7 +48,7 @@ function setup()
   createCanvas(640, 400);
   // frameRate(100);
   // playSound
-  // backgroundSound.play();
+   backgroundSound.play();
   
   
   
