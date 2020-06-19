@@ -1,6 +1,6 @@
 //Reversing the direction
 
-var timer = 16;  //game length
+var timer = 11;  //game length
 var Timer; //to start the timer
 var virusXPos = 0; 
 var virusYPos = 320; 
@@ -34,21 +34,23 @@ var sanitizerLevel = 15;
 function preload(){
   coronavirusImg = loadImage('coronavirus.png');
   coronavirusImg2 = loadImage('c2.jpeg');
-  coronavirusImg3 = loadImage('c3.jpeg');
+  coronavirusImg3 = loadImage('c3.png');
   sanitizerImg = loadImage('sanitizer.jpg');
   waterImg = loadImage('water.jpeg');
   LogoImg = loadImage('Logo.jpeg');
   gunSound = loadSound("gun1.mp3");
   killSound = loadSound("germKill.mp3");
   backgroundSound = loadSound("goCorona.mp3");
+  font = loadFont("Bubble.otf");
 }
   
 function setup() 
 {
   createCanvas(640, 400);
+  textFont(font);
   // frameRate(100);
   // playSound
-   backgroundSound.play();
+  // backgroundSound.play();
   
   
   
